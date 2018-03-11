@@ -17,6 +17,11 @@ header {
     padding: 15px;
 }
 
+header a, footer a {
+    color: #cc6633;
+    font-weight: 600;
+}
+
 nav li {
     list-style-type: none;
 }
@@ -40,13 +45,23 @@ nav li {
     margin: 0 auto;
 }
 
-.carousel-item img {
-    max-height: 420px;
+.carousel-caption h1, .carousel-caption p, section h2 {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;   
 }
 
 .carousel-caption {
     bottom: 95px;
 }
+
+.carousel-item img {
+    max-height: 420px;
+}
+
 
 .carousel-control-prev {
     left: 75px;
@@ -85,10 +100,12 @@ nav li {
 .featured-locales h1 {
     text-align: center;
     margin-top: 70px;
+    color: gray;
 }
 
 .locale-p {
     margin: 0 115px 50px 115px;
+    color: gray;
 }
 
 .featured-locales-images {
@@ -162,7 +179,7 @@ footer {
 .pdp {
     display: flex;
     justify-content: space-evenly;
-    margin: 80px auto;
+    margin: 20px auto;
     width: 80%;
 }
 
@@ -238,10 +255,15 @@ footer {
 
     .pdp {
         flex-direction: column;
+        margin: 0
+    }
+
+    .pdp img {
+        max-width: 350px;
     }
 
     .product-image, .product-details {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     footer {
